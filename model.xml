@@ -11,7 +11,60 @@
 	</properties>
 	<struct>
 		<and abstract="true" mandatory="true" name="TelefonoCelular">
-			<feature name="Base"/>
+			<feature mandatory="true" name="Hacer Llamadas"/>
+			<feature mandatory="true" name="Recibir LLamada"/>
+			<alt mandatory="true" name="Pantalla">
+				<graphics key="collapsed" value="false"/>
+				<feature name="Basica"/>
+				<feature name="Color"/>
+				<feature name="Alta Resolucion"/>
+			</alt>
+			<alt name="Camara">
+				<feature name="5 megapixeles"/>
+				<feature name="10 megapixeles"/>
+			</alt>
+			<and name="Multimedia">
+				<feature name="Videos"/>
+				<feature name="Fotos"/>
+				<feature name="Musica"/>
+			</and>
+			<feature name="GPS"/>
+			<and mandatory="true" name="Conectividad">
+				<feature mandatory="true" name="3G"/>
+				<feature name="4G"/>
+			</and>
+			<and mandatory="true" name="SIM">
+				<feature mandatory="true" name="Sencilla"/>
+				<feature name="Doble"/>
+			</and>
 		</and>
 	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Camara</var>
+				<var>Alta Resolucion</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Videos</var>
+				<var>Alta Resolucion</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Fotos</var>
+				<var>Alta Resolucion</var>
+			</imp>
+		</rule>
+		<rule>
+			<not>
+				<conj>
+					<var>GPS</var>
+					<var>Basica</var>
+				</conj>
+			</not>
+		</rule>
+	</constraints>
 </featureModel>

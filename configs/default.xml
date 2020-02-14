@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-	<feature name="TelefonoCelular"/>
-	<feature name="Base"/>
+	<feature automatic="selected" name="TelefonoCelular"/>
+	<feature automatic="selected" name="Hacer Llamadas"/>
+	<feature automatic="selected" name="Recibir LLamada"/>
+	<feature automatic="selected" name="Pantalla"/>
+	<feature automatic="unselected" name="Basica"/>
+	<feature manual="selected" name="Color"/>
+	<feature automatic="unselected" name="Alta Resolucion"/>
+	<feature automatic="unselected" name="Camara"/>
+	<feature automatic="unselected" name="5 megapixeles"/>
+	<feature automatic="unselected" name="10 megapixeles"/>
+	<feature automatic="selected" name="Multimedia"/>
+	<feature automatic="unselected" name="Videos"/>
+	<feature automatic="unselected" name="Fotos"/>
+	<feature manual="selected" name="Musica"/>
+	<feature manual="selected" name="GPS"/>
+	<feature automatic="selected" name="Conectividad"/>
+	<feature automatic="selected" name="3G"/>
+	<feature manual="selected" name="4G"/>
+	<feature automatic="selected" name="SIM"/>
+	<feature automatic="selected" name="Sencilla"/>
+	<feature manual="selected" name="Doble"/>
 </configuration>
